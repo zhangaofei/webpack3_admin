@@ -1,0 +1,143 @@
+
+/*  本文档只对按钮基础样式进行统一修改
+    不做其他样式处理，按钮在流式布局中的位置、对齐方式等其他设置，请勿在此文档编写
+    样式特殊处理也不在本文档编写范围，请到其他文件进行处理
+*/
+
+/* 设置默认（primary）、成功（success）、警告（warning）、危险（danger）、朴素（plain）五类 公共按钮样式 按钮 */
+/* 根据按钮的 具体功能 确认、编辑、取消 等操作属性确定按钮的 单一性设置 */
+/* 使用时 通过公共样式配合 单一属性样式控制按钮的具体表现形式 */
+/*
+   2018年8月31日:
+      按钮宽度统一设置为100px，其他特殊宽度，在按钮中单独设置
+      确认按钮统一设置高度36px
+      取消按钮统一设置高度36px
+      编辑按钮统一设置高度42px
+      弹框取消按钮需用span加类名cancle模拟，统一设置为无边框、无背景
+      页面取消按钮 统一设置 为朴素按钮
+      横向排列按钮的距离统一设置为30px
+*/
+
+$primary_btn_bg_color: #3484df;
+$success_btn_bg_color: #6bc24e;
+$warning_btn_bg_color: #f57e53;
+$danger_btn_bg_color: #f04550;
+$plain_btn_bg_color: none;
+$primary_btn_text_color: #ffffff;
+$plain_btn_text_color: #000000;
+$button_radius: 1px;
+$button_width: 100px;
+$button_height: 40px;
+$edit_button_height: 42px;
+$confirm_button_height: 36px;
+$cancle_button_height: 36px;
+$success_button_height: 36px;
+$button_margin_transverse: 30px;
+
+// 页面按钮默认设置
+button.primary{
+  width: $button_width;
+  background: $primary_btn_bg_color;
+  color: $primary_btn_text_color;
+  height: $button_height;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  border-radius: $button_radius;
+  vertical-align: top;
+}
+// 页面按钮 成功 设置
+button.success{
+  width: $button_width;
+  background: $success_btn_bg_color;
+  color: $primary_btn_text_color;
+  height: $button_height;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  border-radius: $button_radius;
+  vertical-align: top;
+}
+// 页面按钮 警告 设置
+button.warning{
+  width: $button_width;
+  background: $warning_btn_bg_color;
+  color: $primary_btn_text_color;
+  height: $button_height;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  border-radius: $button_radius;
+  vertical-align: top;
+}
+// 页面按钮 危险 设置
+button.danger{
+  width: $button_width;
+  background: $danger_btn_bg_color;
+  color: $primary_btn_text_color;
+  height: $button_height;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  border-radius: $button_radius;
+  vertical-align: top;
+}
+button.plain{
+  width: $button_width;
+  background: $plain_btn_bg_color;
+  color: $plain_btn_text_color;
+  height: $button_height;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  border-radius: $button_radius;
+  vertical-align: top;
+}
+
+button.confirm{
+  height: $confirm_button_height;
+}
+
+button.edit{
+  height: $edit_button_height;
+}
+
+button.cancle{
+  height: $cancle_button_height;
+}
+span.cancle{
+  padding: 0 30px;
+  line-height: 1;
+  height: $cancle_button_height;
+  line-height: $cancle_button_height;
+  cursor: pointer;
+  display: inline-block;
+}
+
+span.cancle+button.confirm{
+  margin-top: -2px;
+}
+
+.confirm.btn_middle, .cancle.btn_middle{
+  vertical-align: initial;
+  vertical-align: middle\9;
+  vertical-align: middle\0;
+}
+
+button.el-button+button.el-button{
+  margin-left: $button_margin_transverse;
+}
+
+
+span > button.el-button+button.el-button{
+  margin-left: 8px;
+}
+
+a.function_btn_main + a.function_btn_main,
+a.function_btn_main + div.function_btn_main,
+div.function_btn_main + a.function_btn_main{
+  margin-left: 23px;
+}
+a i.fa{
+  color: #3484DF;
+}

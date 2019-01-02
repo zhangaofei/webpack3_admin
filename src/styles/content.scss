@@ -1,0 +1,67 @@
+/* 内容区header */
+.content_header{
+  padding-left: 34px;
+  .ol_left{
+    left: 28px;
+  }
+}
+/* 内容区content */
+.content{
+  .box{
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(53,57,57,0.28);
+    -webkit-box-shadow: 0 1px 3px rgba(53,57,57,0.28);
+    -moz-box-shadow: 0 1px 3px rgba(53,57,57,0.28);
+    border: 1px solid #e5e5e5 !important;
+    color: #000;
+    .box-header{
+      color: #000;
+      padding-top: 30px;
+      padding-left:30px;
+      height: 70px;
+      .box-title{
+        margin-left: 0;
+        float: none;
+        font-size: 20px;
+        color: #000;
+        line-height: 100%;
+        height: 100%;
+      }
+    }
+    .table_content{
+      padding-bottom: 21px !important;
+      padding-left: 60px !important;
+      padding-right: 60px !important;
+    }
+
+  }
+  .box_home{
+    border: none !important;
+    box-shadow:0 0 0;
+    -webkit-box-shadow:0 0 0;
+    -moz-box-shadow:0 0 0;
+
+  }
+}
+.content_main{
+  //padding-left: 34px;
+
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+body label{
+  margin-bottom: 0;
+}
+@media (max-width: 991px){
+  .content-header>h1 {
+    height: 0;
+  }
+  .content-header>.breadcrumb{
+    background: transparent;
+  }
+}
+
+

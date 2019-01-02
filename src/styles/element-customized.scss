@@ -1,0 +1,258 @@
+/***
+    @see 用于修改element组件达到自己需求的样式修改
+    @author zuce wei
+**/
+
+/***********设置按钮的颜色**********/
+.el-button span{
+
+    font-size:15px!important;
+}
+
+.el-button{
+    background-color:#3C8DBC;
+}
+
+.el-dialog__footer{
+    background-color: #E7E7E7;
+    border-top:1px solid #E7E7E7 ;
+    height:100px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.el-dialog__header {
+    padding: 20px 40px 0;
+    height:62px;
+    border-bottom:1px solid #E7E7E7 ;
+    background-color: #F1F1F1;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.footer-btn{
+    float: right;
+    margin-right: 142px;
+    height:60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-btn .el-button--primary{
+    float: right;
+    margin-right: 20px!important;
+    width:88px;
+    background-color:#3C8DBC
+}
+
+.footer-btn .el-button:last-child{
+    float: right;
+    margin-right: 4px!important;
+    width:88px;
+    background-color: #D1D1D1;
+}
+
+.footer-btn .el-button:last-child span{
+    color: #000000!important;
+}
+
+.el-dialog__title{
+    margin-left: 52px;
+}
+
+/***
+    设置弹出框为圆角
+*/
+.el-dialog{
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+
+.box{
+    border-top-color: #6cbaf5 !important;
+    background-color: #FCFCFC;
+    border:solid 0.1px #FCFCFC;
+}
+
+.col-xs-12{
+    background-color: #FFFFFF;
+}
+.content{
+    background-color: #ECF0F5;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+    /* border-color: #3C8DBC; */
+    background: #3C8DBC;
+}
+
+
+
+/*********************以下部分是日志的全局样式*******************/
+.user-log-info .el-select{
+    min-width: 200px;
+    width: 200px;
+}
+
+.user-log-info .el-select>.el-input{
+    margin-left: 41px;
+}
+
+.log-select{
+    min-width: 200px;
+    width: 200px;
+    //background-color: #3C8DBC;
+    float:left;
+    margin-left: 0;
+}
+
+
+.log-chart,pie-chart{
+    height: 490px;
+    width: 48%;
+    float:left;
+    border: solid #6CA9CD 0.2px;
+}
+
+.log-pie-chart{
+    margin-left: 30px;
+}
+
+
+.title{
+    margin: 0 auto;
+    width: 200px;
+    vertical-align: middle;
+    height:62px;
+    font-size: 20px;
+    color: #606366;
+    line-height:40px;
+    height:40px;
+}
+
+.logForm .el-form-item__label {
+    float: left;
+    min-width:135px ;
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+.user-log-info .el-input {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    margin-left: 96px;
+}
+
+.log-config{
+    width: 200px;
+    margin-left: 60px;
+}
+
+
+
+.logForm strong{
+    color: red;
+}
+
+.log-tab .el-tabs__item{
+    padding: 10px 16px;
+    height: 60px;
+    font-size: 20px;
+    color: #A5AAAF;
+}
+
+.log-tab .el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
+    background-color: #fff;
+    color: #3C8DBC;
+    border-right-color: #d1dbe5;
+    border-left-color: #d1dbe5;
+}
+
+/****************************定制复选框被勾选时的背景颜色**********************/
+.el-checkbox__input.is-checked .el-checkbox__inner {
+    background-color: #3C8DBC;
+    border-color: #0190fe;
+}
+
+//.box-title{
+//    float:left;
+//    font-size:18px;
+//    color: #4A4D4F;
+//    line-height:60px;
+//    height:60px;
+//}
+
+
+/************************************ 排行榜的top样式**************************************/
+
+.rank-top{
+    float:left;
+    height:35px;
+    margin-left: 25%;
+    padding-top:8px;
+    margin-top: 8px;
+    background-color: white
+}
+
+
+/*******************************设置每一个页面的标题*********************************/
+.box-header{
+    height:50px;
+}
+
+.box-header .box-title{
+    margin-left:5px;
+    float:left;
+    font-size:18px;
+    color: #4A4D4F;
+    line-height:50px;
+    height:40px;
+}
+
+/**********************************设置显示详情时使用到的tag标签*******************************/
+.detail-head-info{
+    margin-top: -15px;
+    margin-bottom: 5px;
+}
+.detail-head-info .tag{
+    float:left;
+    margin-left: 10px;
+    color:#3C8DBC;
+    border: solid 1px #3C8DBC;
+    border-radius:3px;
+    margin-bottom: 3px;
+    height:30px;
+    text-align:center;
+    line-height:30px;
+}
+
+/*************设置表格详情外套的一层div***************/
+.detail-table{
+    margin-top: 10px;
+}
+
+
+.tab-inner-div{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.log-tab{
+    margin-right: 15px;
+}
+
+/*************************自定义左边导航栏的高度*************************/
+.sidebar-menu .el-menu-item, .el-submenu__title {
+    height: 40px;
+    line-height: 40px;
+}
+
+// 页面内容表单间距
+
+.content .reset_margin_title_right label.el-form-item__label,
+.content label.el-form-item__label{
+    margin-right: 0;
+    padding: 0 20px 0 0;
+}

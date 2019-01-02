@@ -1,0 +1,210 @@
+
+ul,li,ol,dl{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cursor_pointer{
+  cursor: pointer;
+}
+
+.text_color_blue{
+  color: #20A0FF;
+}
+
+.set_margin_left15{
+  margin-left: 15px;
+}
+.set_margin_left20{
+  margin-left: 20px;
+}
+
+.set_margin_left10{
+  margin-left: 10px;
+}
+
+.set_margin_left30{
+  margin-left: 30px;
+}
+
+.set_margin_left5{
+  margin-left: 5px;
+}
+
+.set_margin_right15{
+  margin-right: 15px;
+}
+.set_margin_right20{
+  margin-right: 20px;
+}
+
+.set_margin_right10{
+  margin-right: 10px;
+}
+
+.set_margin_right5{
+  margin-right: 5px;
+}
+.set_margin_top10{
+  margin-top: 10px;
+}
+.set_margin_bottom10{
+  margin-bottom: 10px;
+}
+.set_margin_top20{
+  margin-top: 20px;
+}
+.set_margin_bottom20{
+  margin-bottom: 20px;
+}
+.padding_v_20{
+  padding: 20px 0;
+}
+
+.paddint_b_20{
+  padding-bottom: 20px;
+}
+
+.flex_center_v{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.flex_center_h{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.flex_right_h{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+.flex_shrink0{
+  flex-shrink: 0;
+}
+.flex_shrink1{
+  flex-shrink: 1;
+}
+
+.rotate_45deg{
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.text_justify{
+  text-align: justify;
+}
+
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clearfixed:after{
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+.cs_icon_name label:before{
+  content: '*';
+  color: #ff4949;
+  margin-right: 5px;
+}
+
+
+/* ※ 为form item 添加此类名，可手动添加必填项星号 ※ */
+.user_mandatory label:before,
+th.user_mandatory div:before{
+  content: '*';
+  color: #ff4949;
+  margin-right: 5px;
+}
+
+.mandatory:before {
+  content: '*';
+  color: #ff4949;
+  margin-right: 5px;
+}
+
+// 带切换标签的页标题设置
+.content .box-header.clude_tab{
+  height: 50px;
+  border-bottom: 0;
+}
+
+// 重置按钮 样式
+
+.reset_edit,.reset_cancle,.reset_sure{
+  width: 100px;
+  height: 36px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 34px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 1px;
+}
+.reset_edit{
+
+}
+
+.reset_cancle{
+
+}
+
+.reset_sure{
+
+}
+
+.reset_btn_cancle{
+  display: inline-block;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.upload_icon_content .choose_icon.el-button {
+  margin-left: 20px;
+  height: 34px;
+}
+
+// 超出范围省略号显示
+.txt_ellipsis,
+.txt_ellipsis input{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+}
+
+.text_center{
+  text-align: center;
+}
+/*添加删除图标无背景*/
+button.btn_none_bg{
+  border: none !important;
+  background: transparent !important;
+}
+button.btn_none_bg:hover,button.btn_none_bg:focus{
+  background: transparent !important;
+}

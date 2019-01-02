@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var arr = [1, 2, 2, 3, 4, 5, 5, 6, 7, 7,8,8,0,8,6,3,4,56,2];
+  var arr5 = [
+    {
+      id:1,
+      name:'1'
+    },
+    {
+      id:1,
+      name:'1'
+    },
+    {
+      id:2,
+      name:'2'
+    },
+    {
+      id:2,
+      name:'2'
+    },
+  ];
+  var arr2 = arr.filter((item, index,self)=>{
+    // console.log('self:',item,self.indexOf(item),index)
+    return self.indexOf(item)===index
+
+  });
+  var arrd = [
+    {
+      name:'tom',
+      age:15
+    },
+    {
+      name:'jack',
+      age:18
+    },
+    {
+      name:'tom',
+      age:10
+    }]
+  var hash = {};
+  arrd = arrd.reduce(function(item, next) {
+    hash[next.name] ? '' : hash[next.name] = true && item.push(next);
+    return item
+  }, [])
+  console.log(arrd); //[1, 2, 3, 4, 5, 6, 7, 8, 0, 56]
+
+  console.log(JSON.stringify(arrd));
+</script>
+</body>
+</html>

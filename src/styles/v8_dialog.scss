@@ -1,0 +1,147 @@
+/* 弹框统一样式*/
+.public{
+  .el-dialog--tiny {
+    width: 25%;
+  }
+  .dialog,.el-dialog{
+    min-width: 830px;
+  }
+  .el-dialog__header{
+    /*padding-left:5px ;*/
+    line-height: 70px;
+    padding: 0;
+    height: 70px;
+  }
+  .el-dialog__title{
+    margin-left: 20px;
+    color: #000;
+  }
+  .el-dialog__headerbtn{
+    top:0;
+    right: 20px;
+    color: #000;
+  }
+  //=========================弹框底部
+  .el-dialog__footer{
+    padding:0 ;
+    height: 70px ;
+    line-height: 70px ;
+  }
+  .foot{
+    margin-right: 60px;
+  }
+  .canle{
+    margin-right: 20px;
+    color:#6B7780;
+    cursor: pointer
+  }
+  /*=====*/
+  .el-dialog__body {
+    padding: 60px 20px;
+    color: #000;
+    font-size: 14px;
+  }
+  .el-form{
+    .el-form-item{
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 19px;
+      width: 66.4%;
+      .el-form-item__content{
+        //height: 40.5px;
+      }
+      .el-form-item__label{
+        padding: 0 20px 0 0;
+        margin-left: 0;
+      }
+      .el_put,.el_sel{
+        width: 100%;
+        margin-left: 0;
+        max-width: 500px;
+      }
+      .el-input,.el-textarea{
+        max-width: 500px;
+        .el-input__inner,.el-textarea__inner{
+          border: 1px solid #e1e3eb;
+          border-radius:1px ;
+          background-color: #f7f8fc;
+        }
+      }
+      .el-form-item__error {
+        color: #ff4949;
+        font-size: 12px;
+        line-height: 1;
+        padding-top: 0px;
+        position: absolute;
+        top: 100%;
+        left: 0px;
+      }
+    }
+    .clearblock{
+      .el-form-item__content{
+        font-size: 0;
+      }
+      .put_left{
+        width: 64%;
+        padding-right: 20px;
+      }
+      .put_right{
+        width: 36%;
+      }
+    }
+
+  }
+  /*带tab的form表单*/
+  .tab_form{
+    .el-form{
+      .el-form-item{
+        width: 73%;
+      }
+    }
+  }
+}
+.private{
+  .dialog,.el-dialog{
+    min-width: 850px;
+  }
+}
+/*必填星号标记*/
+.item_mark .el-form-item__label:before {
+  content: '*';
+  color: #f56c6c;
+  margin-right: 4px;
+}
+/*form表单外的*/
+.el-input,.el-textarea{
+  .el-input__inner,.el-textarea__inner{
+    border: 1px solid #e1e3eb;
+    border-radius:1px ;
+    background-color: #f7f8fc;
+  }
+}
+ .el-form .el-form-item__label{
+  padding: 0 20px 0 0;
+  margin-left: 0;
+}
+.form_out{
+  margin: 0 20px;
+  margin-top: 10px;
+    .el-form-item{
+      margin-bottom: 40px;
+      .el-input,.el-textarea {
+        width: 390px;
+      }
+    }
+    .el-form-item:first-of-type(1){
+      .el-form-item__content{
+        margin-left: 0;
+      }
+    }
+}
+
+.public .el-form .cs_icon_name label.el-form-item__label{
+  line-height: 72px;
+}
+.el-table::before{
+  height: 0 !important;
+}
